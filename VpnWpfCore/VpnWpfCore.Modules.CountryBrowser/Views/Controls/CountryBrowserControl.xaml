@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="VpnWpfCore.Modules.CountryBrowser.Views.Controls.CountryBrowserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:msb="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:prism="http://prismlibrary.com/"
+             mc:Ignorable="d"
+             d:DesignWidth="100"
+             d:DesignHeight="550"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Content>
+        <StackPanel MaxHeight="550">
+            <ListBox x:Name="Countries_List"
+                     Style="{StaticResource CBC_ListBoxStyle}"
+                     ItemsSource="{Binding CountriesCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <msb:Interaction.Triggers>
+                    <msb:EventTrigger EventName="SelectionChanged">
+                        <msb:InvokeCommandAction Command="{Binding SelectionChangedCommand}"
+                                                 PassEventArgsToCommand="False"/>
+                    </msb:EventTrigger>
+                </msb:Interaction.Triggers>
+            </ListBox>
+            <Button Content="Select"
+                    Style="{StaticResource CBC_SelectButtonStyle}"
+                    Command="{Binding SelectCountryCommand}"
+                    CommandParameter="{Binding ElementName=Countries_List, Path=SelectedItem}"/>
+            <Rectangle Style="{StaticResource CBC_DrugBorder}">
+                <msb:Interaction.Triggers>
+                    <msb:EventTrigger EventName="MouseLeftButtonDown">
+                        <msb:InvokeCommandAction Command="{Binding DragMoveCommand}"
+                                                 PassEventArgsToCommand="False"/>
+                    </msb:EventTrigger>
+                </msb:Interaction.Triggers>
+            </Rectangle>
+        </StackPanel>
+    </UserControl.Content>
+</UserControl>

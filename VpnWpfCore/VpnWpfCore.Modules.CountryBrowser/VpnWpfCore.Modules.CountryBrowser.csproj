@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>VpnWpfCore.Modules.CountryBrowser</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\f_australia.png" />
+    <None Remove="Assets\f_egypt.png" />
+    <None Remove="Assets\f_greece.png" />
+    <None Remove="Assets\f_india.png" />
+    <None Remove="Assets\f_liberia.png" />
+    <None Remove="Assets\f_philippines.png" />
+    <None Remove="Assets\f_south_korea.png" />
+    <None Remove="Assets\f_spain.png" />
+    <None Remove="Assets\f_taiwan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VpnWpfCore.Domain\VpnWpfCore.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\f_algeria.png" />
+    <Resource Include="Assets\f_belgium.png" />
+    <Resource Include="Assets\f_mexico.png" />
+    <Resource Include="Assets\f_nicaragua.png" />
+    <Resource Include="Assets\f_norway.png" />
+    <Resource Include="Assets\f_philippines.png" />
+    <Resource Include="Assets\f_tanzania.png" />
+    <Resource Include="Assets\f_australia.png" />
+    <Resource Include="Assets\f_egypt.png" />
+    <Resource Include="Assets\f_greece.png" />
+    <Resource Include="Assets\f_india.png" />
+    <Resource Include="Assets\f_liberia.png" />
+    <Resource Include="Assets\f_south_korea.png" />
+    <Resource Include="Assets\f_spain.png" />
+    <Resource Include="Assets\f_taiwan.png" />
+  </ItemGroup>
+</Project>

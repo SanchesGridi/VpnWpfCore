@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VpnWpfCore.Ui", "VpnWpfCore.Ui\VpnWpfCore.Ui.csproj", "{3E7D8AD3-6AD5-49C2-AB59-294120BCD693}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VpnWpfCore.Domain", "VpnWpfCore.Domain\VpnWpfCore.Domain.csproj", "{D7CED7B6-4070-4E68-B415-4E55B2140787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{838322A9-6D9D-45B5-82EA-A3D11E0466D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VpnWpfCore.Modules.CountryBrowser", "VpnWpfCore.Modules.CountryBrowser\VpnWpfCore.Modules.CountryBrowser.csproj", "{1F14DFF6-A8B6-4403-B8B1-488A2B6A83D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VpnWpfCore.Modules.SettingsBrowser", "VpnWpfCore.Modules.SettingsBrowser\VpnWpfCore.Modules.SettingsBrowser.csproj", "{F3FD6DEC-DF3E-4CCD-8D20-88B826CF2B33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E7D8AD3-6AD5-49C2-AB59-294120BCD693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7D8AD3-6AD5-49C2-AB59-294120BCD693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7D8AD3-6AD5-49C2-AB59-294120BCD693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7D8AD3-6AD5-49C2-AB59-294120BCD693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CED7B6-4070-4E68-B415-4E55B2140787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CED7B6-4070-4E68-B415-4E55B2140787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CED7B6-4070-4E68-B415-4E55B2140787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CED7B6-4070-4E68-B415-4E55B2140787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F14DFF6-A8B6-4403-B8B1-488A2B6A83D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F14DFF6-A8B6-4403-B8B1-488A2B6A83D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F14DFF6-A8B6-4403-B8B1-488A2B6A83D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F14DFF6-A8B6-4403-B8B1-488A2B6A83D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3FD6DEC-DF3E-4CCD-8D20-88B826CF2B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FD6DEC-DF3E-4CCD-8D20-88B826CF2B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FD6DEC-DF3E-4CCD-8D20-88B826CF2B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FD6DEC-DF3E-4CCD-8D20-88B826CF2B33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F14DFF6-A8B6-4403-B8B1-488A2B6A83D1} = {838322A9-6D9D-45B5-82EA-A3D11E0466D0}
+		{F3FD6DEC-DF3E-4CCD-8D20-88B826CF2B33} = {838322A9-6D9D-45B5-82EA-A3D11E0466D0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {077EF263-868A-4304-A51C-ADA163063DD7}
+	EndGlobalSection
+EndGlobal

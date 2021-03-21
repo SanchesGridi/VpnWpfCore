@@ -1,0 +1,49 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--border-->
+    <Style x:Key="SBC_BorderStyle"
+               x:Shared="False"
+               TargetType="Border">
+        <Style.Setters>
+            <Setter Property="Margin" Value="2.5"/>
+            <Setter Property="BorderThickness" Value="2.5"/>
+            <Setter Property="BorderBrush">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF2F15A0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+    <!--stack panel-->
+    <Style x:Key="SBC_StackPanelStyle"
+               x:Shared="False"
+               TargetType="StackPanel">
+        <Style.Setters>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF4C136C" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+    <!--button-->
+    <Style x:Key="SBC_ButtonStyle"
+               x:Shared="False"
+               TargetType="Button">
+        <Style.Setters>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="MinWidth" Value="120"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="Gray"/>
+            <Setter Property="Foreground" Value="Violet"/>
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>
