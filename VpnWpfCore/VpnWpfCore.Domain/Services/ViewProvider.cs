@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows;
 
 namespace VpnWpfCore.Domain.Services
@@ -26,17 +25,6 @@ namespace VpnWpfCore.Domain.Services
             catch (Exception)
             {
                 throw;
-            }
-        }
-        public IEnumerable<TView> GetViews<TView>(DependencyObject rootView, IEnumerable<string> viewNames) where TView : DependencyObject
-        {
-            if (viewNames == null)
-            {
-                throw new ArgumentNullException("viewNames");
-            }
-            foreach (var viewName in viewNames)
-            {
-                yield return this.GetView<TView>(rootView, viewName);
             }
         }
     }

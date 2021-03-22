@@ -13,12 +13,6 @@ namespace VpnWpfCore.Domain.Commands
         public LongRunningOperation Operation => _operation;
         public bool IsExecuting => _isExecuting;
 
-        public LongRunningCommand(Action executeMethod) : this(executeMethod, () => true)
-        {
-        }
-        public LongRunningCommand(Action executeMethod, Func<bool> canExecuteMethod) : this(executeMethod, canExecuteMethod, LongRunningOperation.NotSet)
-        {
-        }
         public LongRunningCommand(Action executeMethod, Func<bool> canExecuteMethod, LongRunningOperation operation) : base(executeMethod, canExecuteMethod)
         {
             _operation = operation ?? throw new ArgumentNullException("operation");
@@ -40,14 +34,7 @@ namespace VpnWpfCore.Domain.Commands
 
             base.Execute(parameter);
 
-            if (_operation.ShouldIgnoreTimer())
-            {
-                this.SetExecuteState(false);
-            }
-            else
-            {
-                _operation.InitAndStartTimer();
-            }
+            _operation.InitAndStartTimer();
         }
         protected override bool CanExecute(object parameter)
         {
